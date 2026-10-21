@@ -1,0 +1,19 @@
+[project]
+name = "financial-risk-eda"
+version = "0.1.0"
+description = "Week 1 EDA lab notebook for the Financial risk dataset"
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=6.29.0",
+    "jupyter>=1.1.0",
+    "kagglehub>=0.3.0",
+    "matplotlib>=3.9.0",
+    "nbclient>=0.10.0",
+    "nbformat>=5.10.0",
+    "numpy>=2.0.0",
+    "pandas>=2.2.0",
+    "scikit-learn>=1.5.0",
+    "scipy>=1.14.0",
+    "seaborn>=0.13.0",
+]
+

@@ -1,0 +1,10 @@
+{
+  "task": "Task 2 - Word2Vec from Scratch",
+  "dataset": "Preprocessed IMDB train split",
+  "sample_size": 2000,
+  "vocab_size": 3000,
+  "min_count": 2,
+  "window_size": 2,
+  "training_pair_count": 1850888,
+  "seed": 42
+}

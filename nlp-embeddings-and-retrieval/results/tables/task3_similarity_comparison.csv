@@ -1,0 +1,5 @@
+setting,word,cosine_similarity,interpretation
+GloVe static,bank,1.0,"Same word uses the same vector, so similarity is 1.0."
+BERT contextual,bank,0.5164129137992859,The river and money meanings get different sentence vectors.
+BERT contextual,light,0.4672723114490509,Compared brightness vs weight meanings.
+BERT contextual,match,0.34300297498703003,Compared sports vs fire meanings.

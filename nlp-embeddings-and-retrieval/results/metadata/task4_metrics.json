@@ -1,0 +1,32 @@
+{
+  "task": "Task 4 - BERT Text Classification",
+  "baseline": {
+    "accuracy": 0.863,
+    "macro_f1": 0.8629834209939402,
+    "training_time_seconds": 1.4270589351654053
+  },
+  "distilbert": {
+    "test_accuracy": 0.87,
+    "test_macro_f1": 0.8699479791916767,
+    "training_time_seconds": 371.85036969184875
+  },
+  "training_history": [
+    {
+      "epoch": 1,
+      "training_loss": 0.3742431136318289,
+      "validation_accuracy": 0.878
+    },
+    {
+      "epoch": 2,
+      "training_loss": 0.17907342766991818,
+      "validation_accuracy": 0.879
+    },
+    {
+      "epoch": 3,
+      "training_loss": 0.08668292044980315,
+      "validation_accuracy": 0.883
+    }
+  ],
+  "main_result": "DistilBERT improved held-out test accuracy from 0.863 to 0.870, but took much longer to train than TF-IDF.",
+  "interpretation": "DistilBERT improved test accuracy only slightly over TF-IDF while taking much longer to train, so the baseline is the better practical choice for this setup. With 10x less data TF-IDF is even more attractive; with 10x more data both models should be evaluated again because the transformer may benefit more from the larger corpus."
+}

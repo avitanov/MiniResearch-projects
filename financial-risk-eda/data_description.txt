@@ -1,0 +1,75 @@
+Age: Age of the individual in years
+
+Gender: Gender of the individual
+
+       Male
+       Female
+       Non-binary
+
+Education Level: Highest education level completed by the individual
+
+       High School
+       Bachelor's
+       Master's
+       PhD
+
+Marital Status: Current marital status of the individual
+
+       Single
+       Married
+       Divorced
+       Widowed
+
+Income: Annual income of the individual
+
+Credit Score: Credit score of the individual
+
+Loan Amount: Amount of money requested or borrowed by the individual
+
+Loan Purpose: Purpose for which the loan is taken
+
+       Auto
+       Business
+       Home
+       Personal
+
+Employment Status: Current employment status of the individual
+
+       Employed
+       Self-employed
+       Unemployed
+
+Years at Current Job: Number of years the individual has worked at the current job
+
+Payment History: Past payment behavior of the individual
+
+       Excellent
+       Good
+       Fair
+       Poor
+
+Debt-to-Income Ratio: Ratio of the individual's debt compared with their income
+
+Assets Value: Total value of the individual's assets
+
+Number of Dependents: Number of people financially dependent on the individual
+
+City: City where the individual lives
+
+State: State where the individual lives
+
+Country: Country where the individual comes from
+
+Previous Defaults: Number of a person failed to pay back a loan or debt as agreed
+
+Marital Status Change: Coded variable related to changes in marital status
+
+       0
+       1
+       2
+
+Risk Rating: Financial risk level assigned to the individual
+
+       Low
+       Medium
+       High

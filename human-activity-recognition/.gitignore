@@ -1,0 +1,37 @@
+.venv/
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+data/
+mlartifacts/
+mlruns/
+mlflow.db
+
+# Local environments, credentials, and notebook caches
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+
+# Trained weights and fitted model artifacts
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.gguf
+*.onnx
+*.h5
+*.hdf5
+*.keras
+*.pkl
+*.pickle
+*.joblib
+checkpoint-*/
+mlruns/
+mlartifacts/
+mlflow.db

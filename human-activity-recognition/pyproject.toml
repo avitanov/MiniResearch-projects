@@ -1,0 +1,18 @@
+[project]
+name = "human-activity-recognition"
+version = "0.1.0"
+description = "Training and evaluating models on HAR dataset (Mini-batch SGD Logistic Regression)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.2.0",
+    "jupyterlab>=4.5.7",
+    "kaggle>=2.1.2",
+    "matplotlib>=3.10.9",
+    "mlflow>=3.12.0",
+    "numpy>=2.4.5",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.8.0",
+    "seaborn>=0.13.2",
+    "xgboost>=3.2.0",
+]

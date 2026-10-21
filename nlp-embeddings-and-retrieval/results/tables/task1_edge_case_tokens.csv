@@ -1,0 +1,19 @@
+text,tokenizer,token_count,tokens
+The quick brown fox jumps over the lazy dog.,BERT,10,the | quick | brown | fox | jumps | over | the | lazy | dog | .
+The quick brown fox jumps over the lazy dog.,GPT-2,10,The | Ġquick | Ġbrown | Ġfox | Ġjumps | Ġover | Ġthe | Ġlazy | Ġdog | .
+The quick brown fox jumps over the lazy dog.,DistilBERT,10,the | quick | brown | fox | jumps | over | the | lazy | dog | .
+I can't believe it's not butter!,BERT,11,i | can | ' | t | believe | it | ' | s | not | butter | !
+I can't believe it's not butter!,GPT-2,9,I | Ġcan | 't | Ġbelieve | Ġit | 's | Ġnot | Ġbutter | !
+I can't believe it's not butter!,DistilBERT,11,i | can | ' | t | believe | it | ' | s | not | butter | !
+gobbledegook,BERT,4,go | ##bbled | ##ego | ##ok
+gobbledegook,GPT-2,4,gob | bled | eg | ook
+gobbledegook,DistilBERT,4,go | ##bbled | ##ego | ##ok
+print('hello world'),BERT,7,print | ( | ' | hello | world | ' | )
+print('hello world'),GPT-2,5,print | (' | hello | Ġworld | ')
+print('hello world'),DistilBERT,7,print | ( | ' | hello | world | ' | )
+Maison principale à Paris,BERT,5,maison | principal | ##e | a | paris
+Maison principale à Paris,GPT-2,6,Ma | ison | Ġprincip | ale | ĠÃł | ĠParis
+Maison principale à Paris,DistilBERT,5,maison | principal | ##e | a | paris
+antidisestablishmentarianism,BERT,8,anti | ##dis | ##est | ##ab | ##lish | ##ment | ##arian | ##ism
+antidisestablishmentarianism,GPT-2,5,ant | idis | establishment | arian | ism
+antidisestablishmentarianism,DistilBERT,8,anti | ##dis | ##est | ##ab | ##lish | ##ment | ##arian | ##ism

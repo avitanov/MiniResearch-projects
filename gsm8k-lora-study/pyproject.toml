@@ -1,0 +1,19 @@
+[project]
+name = "gsm8k-lora-study"
+version = "0.1.0"
+description = "Week 8 notebook environment for LoRA foundation tasks."
+readme = "README.md"
+requires-python = "==3.12.3"
+dependencies = [
+    "datasets==5.0.0",
+    "ipykernel==7.3.0",
+    "jupyterlab==4.6.1",
+    "litellm",
+    "matplotlib==3.11.0",
+    "nbformat==5.10.4",
+    "numpy==2.5.1",
+    "pandas==3.0.3",
+    "pytest==8.4.1",
+    "torch==2.8.0",
+    "transformers==5.13.0",
+]

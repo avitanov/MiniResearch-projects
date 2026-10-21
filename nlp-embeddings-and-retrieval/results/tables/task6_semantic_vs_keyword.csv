@@ -1,0 +1,7 @@
+query,expected_label_name,semantic_precision_at_5,keyword_precision_at_5,better_method
+international peace talks after a border conflict,World,1.0,1.0,tie
+who won the football match last night,Sports,1.0,1.0,tie
+stock market and company earnings update,Business,0.4,0.6,keyword
+new satellite rocket launch space mission,Sci/Tech,1.0,1.0,tie
+technology company releases new security software,Sci/Tech,1.0,0.8,semantic
+central bank interest rates and investor worries,Business,1.0,1.0,tie

@@ -1,0 +1,43 @@
+[
+  {
+    "strategy": "greedy",
+    "settings": {
+      "do_sample": false
+    },
+    "generated_text": "The most surprising thing about artificial intelligence is that it's not just a tool for the rich. It's a tool for the poor.\n\nThe problem is that it's not just a tool for the rich. It's a tool for the poor.\n\n"
+  },
+  {
+    "strategy": "temperature_0_3",
+    "settings": {
+      "do_sample": true,
+      "temperature": 0.3
+    },
+    "generated_text": "The most surprising thing about artificial intelligence is that it's a very different animal than the ones we've seen before.\n\nIt's a very different animal than the ones we've seen before.\n\nIt's a very different animal than the ones we've seen"
+  },
+  {
+    "strategy": "temperature_1_0",
+    "settings": {
+      "do_sample": true,
+      "temperature": 1.0
+    },
+    "generated_text": "The most surprising thing about artificial intelligence is that there isn't any artificial intelligence being taught in classrooms, to the detriment of students.\"\n\nSo, if they want to be able to create an AI, you'd better understand how their skills relate to each other as"
+  },
+  {
+    "strategy": "top_k",
+    "settings": {
+      "do_sample": true,
+      "top_k": 50,
+      "temperature": 0.8
+    },
+    "generated_text": "The most surprising thing about artificial intelligence is that there are a number of theories floating around about it, some of which may be completely wrong, some of which are completely valid. It's because there is so much evidence that we have these tools at our disposal that we"
+  },
+  {
+    "strategy": "top_p",
+    "settings": {
+      "do_sample": true,
+      "top_p": 0.9,
+      "temperature": 0.8
+    },
+    "generated_text": "The most surprising thing about artificial intelligence is that there are a number of theories floating around about it, some of which may be completely wrong, some of which are completely valid. It's not just that there's no solid evidence for these theories. We know that computers"
+  }
+]

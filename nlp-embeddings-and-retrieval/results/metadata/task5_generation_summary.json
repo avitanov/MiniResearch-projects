@@ -1,0 +1,31 @@
+{
+  "task": "Task 5 - GPT-2 Text Generation",
+  "model_name": "gpt2",
+  "prompt": "The most surprising thing about artificial intelligence is",
+  "max_new_tokens": 45,
+  "strategies": [
+    "greedy",
+    "temperature_0_3",
+    "temperature_1_0",
+    "top_k",
+    "top_p"
+  ],
+  "attention_layers_heads": [
+    {
+      "layer": 0,
+      "head": 0,
+      "plot": "task5_attention_head_1.png"
+    },
+    {
+      "layer": 6,
+      "head": 3,
+      "plot": "task5_attention_head_2.png"
+    }
+  ],
+  "best_strategy_observed": "top_k or top_p",
+  "main_result": "Greedy and low-temperature decoding were repetitive, while top-k and top-p gave the best balance of coherence and variety in this run.",
+  "attention_interpretation": "The heatmaps show GPT-2 looking backward at earlier tokens. Layer 0 Head 0 is concentrated mostly on the first token, while Layer 6 Head 3 spreads attention across more previous tokens and uses broader context.",
+  "encoder_decoder_explanation_file": "task5_encoder_decoder_explanation.md",
+  "encoder_decoder_explanation": "**When would you choose an encoder model like BERT over a decoder model like GPT-2?**\n\nChoose an encoder model when the task is to understand an entire input at once. BERT reads text bidirectionally, so each token representation can use both left and right context. That makes it a natural fit for classification, sentiment analysis, named entity recognition, sentence similarity, reranking, and embedding/search workflows. In this project, Task 4 sentiment classification is a better match for DistilBERT than GPT-2 because the goal is to assign a label to a complete review, not continue the review.\n\n**Can you use GPT-2 for classification?**\n\nYes, but it is not the most direct architecture for it. GPT-2 is a decoder-only model trained for next-token prediction, so classification usually requires an adaptation: add a classification head, prompt it to produce a label token, or score candidate label strings and choose the highest-probability one. This can work, but it is less natural than using an encoder because GPT-2 only conditions left-to-right and is optimized for continuation.\n\n**Can you use BERT for generation?**\n\nNot for normal open-ended left-to-right text generation in the same way as GPT-2. BERT is trained with masked language modeling, where it fills in missing tokens using both left and right context. That is useful for understanding and infilling, but it does not define a clean next-token generation process for producing long text one token at a time. Encoder-decoder models such as T5 or BART are better for conditional generation, while decoder-only models like GPT-2 are better for free-form continuation.\n\n**Which architecture did the GPT-3, GPT-4, and Llama family inherit, and why did it win?**\n\nThey inherited the decoder-only, autoregressive architecture. It won for large language models because next-token prediction gives a simple and scalable training objective: train on massive text corpora by predicting the next token. The same objective directly supports open-ended generation, chat-style continuation, tool-use text formats, summarization, coding, and many other tasks through prompting. Decoder-only models also scale efficiently with model size and data, which made them the dominant architecture for general-purpose generative LLMs.",
+  "interpretation": "Attention heatmaps show which earlier tokens GPT-2 looks at while predicting later tokens."
+}

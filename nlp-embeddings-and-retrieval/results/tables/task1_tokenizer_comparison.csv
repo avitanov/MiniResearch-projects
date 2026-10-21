@@ -1,0 +1,4 @@
+tokenizer,average_token_count,median_token_count,min_token_count,max_token_count,token_to_word_ratio
+GPT-2,290.67,211.0,31,1513,1.2467
+BERT,297.74,216.0,32,1670,1.277
+DistilBERT,297.74,216.0,32,1670,1.277

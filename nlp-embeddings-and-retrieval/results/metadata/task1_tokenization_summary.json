@@ -1,0 +1,121 @@
+{
+  "task": "Task 1 - Text and Tokenization",
+  "dataset": "IMDB",
+  "source_path": "/home/atanas-vitanov/Documents/praksa/ml-interns-mk-2026/interns/atanas/week_6/data/preprocessed/imdb",
+  "sample_split": "train",
+  "sample_size": 1000,
+  "seed": 42,
+  "split_sizes": {
+    "train": 24902,
+    "test": 24676
+  },
+  "label_counts": {
+    "0": 503,
+    "1": 497
+  },
+  "length_summary": {
+    "sample_size": 1000,
+    "average_word_count": 233.15,
+    "median_word_count": 173.0,
+    "average_character_count": 1311.59,
+    "median_character_count": 963.5,
+    "min_word_count": 24,
+    "max_word_count": 1184
+  },
+  "tokenizer_comparison": [
+    {
+      "tokenizer": "GPT-2",
+      "average_token_count": 290.67,
+      "median_token_count": 211.0,
+      "min_token_count": 31,
+      "max_token_count": 1513,
+      "token_to_word_ratio": 1.2467
+    },
+    {
+      "tokenizer": "BERT",
+      "average_token_count": 297.74,
+      "median_token_count": 216.0,
+      "min_token_count": 32,
+      "max_token_count": 1670,
+      "token_to_word_ratio": 1.277
+    },
+    {
+      "tokenizer": "DistilBERT",
+      "average_token_count": 297.74,
+      "median_token_count": 216.0,
+      "min_token_count": 32,
+      "max_token_count": 1670,
+      "token_to_word_ratio": 1.277
+    }
+  ],
+  "edge_case_average_counts": {
+    "GPT-2": 6.5,
+    "BERT": 7.5,
+    "DistilBERT": 7.5
+  },
+  "edge_case_best_by_text": [
+    {
+      "text": "I can't believe it's not butter!",
+      "tokenizer": "GPT-2",
+      "token_count": 9
+    },
+    {
+      "text": "Maison principale à Paris",
+      "tokenizer": "BERT",
+      "token_count": 5
+    },
+    {
+      "text": "Maison principale à Paris",
+      "tokenizer": "DistilBERT",
+      "token_count": 5
+    },
+    {
+      "text": "The quick brown fox jumps over the lazy dog.",
+      "tokenizer": "BERT",
+      "token_count": 10
+    },
+    {
+      "text": "The quick brown fox jumps over the lazy dog.",
+      "tokenizer": "DistilBERT",
+      "token_count": 10
+    },
+    {
+      "text": "The quick brown fox jumps over the lazy dog.",
+      "tokenizer": "GPT-2",
+      "token_count": 10
+    },
+    {
+      "text": "antidisestablishmentarianism",
+      "tokenizer": "GPT-2",
+      "token_count": 5
+    },
+    {
+      "text": "gobbledegook",
+      "tokenizer": "BERT",
+      "token_count": 4
+    },
+    {
+      "text": "gobbledegook",
+      "tokenizer": "DistilBERT",
+      "token_count": 4
+    },
+    {
+      "text": "gobbledegook",
+      "tokenizer": "GPT-2",
+      "token_count": 4
+    },
+    {
+      "text": "print('hello world')",
+      "tokenizer": "GPT-2",
+      "token_count": 5
+    }
+  ],
+  "main_result": "GPT-2 had the lowest average token count in the sample.",
+  "interpretation": "In this 1,000-review IMDB sample, GPT-2 is the most economical tokenizer because it has the lowest average token count at 290.67 tokens per review. BERT and DistilBERT use WordPiece and have the same vocabulary family, so their counts are expected to be almost identical. GPT-2 uses BPE, which can split punctuation, rare words, code, and non-English text differently, so the cheapest tokenizer can depend on what users write.",
+  "saved_outputs": {
+    "review_length_plot": "/home/atanas-vitanov/Documents/praksa/ml-interns-mk-2026/interns/atanas/week_6/results/plots/task1_review_length_histogram.png",
+    "tokenizer_histogram": "/home/atanas-vitanov/Documents/praksa/ml-interns-mk-2026/interns/atanas/week_6/results/plots/task1_tokenizer_count_histogram.png",
+    "tokenizer_comparison_table": "/home/atanas-vitanov/Documents/praksa/ml-interns-mk-2026/interns/atanas/week_6/results/tables/task1_tokenizer_comparison.csv",
+    "edge_case_tokens_table": "/home/atanas-vitanov/Documents/praksa/ml-interns-mk-2026/interns/atanas/week_6/results/tables/task1_edge_case_tokens.csv"
+  }
+}

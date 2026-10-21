@@ -1,0 +1,3 @@
+model,test_accuracy,macro_f1,training_time_seconds
+TF-IDF + Logistic Regression,0.863,0.8629834209939402,1.4270589351654053
+DistilBERT fine-tuned,0.87,0.8699479791916767,371.85036969184875

@@ -1,0 +1,30 @@
+{
+  "task": "Task 3 - Static vs Contextual Embeddings",
+  "glove_model": "glove-wiki-gigaword-100",
+  "bert_model": "bert-base-uncased",
+  "static_words": [
+    "bank",
+    "apple",
+    "light"
+  ],
+  "analogy": "king - man + woman",
+  "bank_static_similarity": 1.0,
+  "bank_bert_similarity": 0.5164129137992859,
+  "extra_contextual_words": [
+    {
+      "word": "light",
+      "meaning_a": "brightness",
+      "meaning_b": "weight",
+      "bert_similarity": 0.4672723114490509
+    },
+    {
+      "word": "match",
+      "meaning_a": "sports",
+      "meaning_b": "fire",
+      "bert_similarity": 0.34300297498703003
+    }
+  ],
+  "projection_word": "light",
+  "main_result": "Static embeddings use one vector per word, while BERT changes the vector when context changes.",
+  "interpretation": "GloVe is simpler and cheaper, but BERT is better when the sentence changes the word meaning."
+}

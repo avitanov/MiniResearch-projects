@@ -1,0 +1,19 @@
+{
+  "task": "Task 4 - BERT Text Classification",
+  "dataset": "Preprocessed IMDB",
+  "train_subset_size": 5000,
+  "validation_subset_size": 1000,
+  "test_subset_size": 1000,
+  "tfidf_max_features": 10000,
+  "model_name": "distilbert-base-uncased",
+  "max_length": 256,
+  "batch_size": 16,
+  "learning_rate": 2e-05,
+  "epochs": 3,
+  "device": "cuda:0",
+  "seed": 42,
+  "sampling_method": "stratified by label distribution",
+  "train_validation_source_split": "IMDB train",
+  "test_source_split": "IMDB test",
+  "subsampling_reason": "CPU-friendly DistilBERT fine-tuning."
+}

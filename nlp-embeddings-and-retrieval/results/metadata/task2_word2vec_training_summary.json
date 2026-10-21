@@ -1,0 +1,31 @@
+{
+  "task": "Task 2 - Word2Vec from Scratch",
+  "dataset": "Preprocessed IMDB train split",
+  "sample_size": 2000,
+  "vocab_size": 3000,
+  "training_pair_count": 1850888,
+  "embedding_dim": 100,
+  "window_size": 2,
+  "negative_samples": 5,
+  "learning_rate": 0.01,
+  "epochs": 10,
+  "dimension_epochs": 5,
+  "first_epoch_loss": 2.72865287222179,
+  "final_epoch_loss": 2.3041372216119367,
+  "loss_change": 0.4245156506098535,
+  "probe_words": [
+    "good",
+    "bad",
+    "movie",
+    "actor",
+    "great"
+  ],
+  "analogy_questions": [
+    "good - bad + great",
+    "man - woman + actor",
+    "movie - film + actor"
+  ],
+  "dimension_observation": "On the full-pair comparison, 100 dimensions had the lowest final loss (2.3609). The nearest-neighbor words still changed across dimensions, which shows that the 2,000-review corpus is still noisy.",
+  "main_result": "The model learned local IMDB word associations, but analogy quality is limited by the domain-specific corpus.",
+  "interpretation": "Training loss and neighbor tables are useful checks, but the model is not expected to match pretrained embeddings because it sees only a 2,000-review movie-review subset."
+}

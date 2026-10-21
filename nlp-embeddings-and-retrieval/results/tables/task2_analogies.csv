@@ -1,0 +1,16 @@
+analogy,rank,candidate,similarity
+good - bad + great,1,fine,0.5719665317164795
+good - bad + great,2,wonderful,0.5642283482114818
+good - bad + great,3,excellent,0.542804561609931
+good - bad + great,4,decent,0.5305630207719468
+good - bad + great,5,portraying,0.5304897543720978
+man - woman + actor,1,actress,0.6677470250721402
+man - woman + actor,2,writer,0.6079981506605652
+man - woman + actor,3,person,0.5792619504125278
+man - woman + actor,4,soldier,0.5626347592215357
+man - woman + actor,5,walken,0.5609143405124103
+movie - film + actor,1,actress,0.7287888098837256
+movie - film + actor,2,person,0.5805074337085241
+movie - film + actor,3,kid,0.566457191515089
+movie - film + actor,4,girl,0.5519767869306429
+movie - film + actor,5,lady,0.5321643303544322
